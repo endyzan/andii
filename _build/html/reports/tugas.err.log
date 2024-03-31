@@ -1,27 +1,26 @@
 Traceback (most recent call last):
-  File "C:\Users\Acer\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+  File "C:\Users\endyzan\AppData\Local\Programs\Python\Python311\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
     executenb(
-  File "C:\Users\Acer\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1314, in execute
+  File "C:\Users\endyzan\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbclient\client.py", line 1265, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Acer\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+  File "C:\Users\endyzan\AppData\Roaming\Python\Python311\site-packages\jupyter_core\utils\__init__.py", line 166, in wrapped
     return loop.run_until_complete(inner)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Acer\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 685, in run_until_complete
+  File "C:\Users\endyzan\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "C:\Users\Acer\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+  File "C:\Users\endyzan\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbclient\client.py", line 703, in async_execute
     await self.async_execute_cell(
-  File "C:\Users\Acer\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+  File "C:\Users\endyzan\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbclient\client.py", line 1021, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "C:\Users\Acer\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+  File "C:\Users\endyzan\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbclient\client.py", line 915, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
 df_1 = _deepnote_execute_sql('SELECT * FROM iris;', 'SQL_E0CDE1BA_8707_4487_B543_E6F453CE52E0', audit_sql_comment='', sql_cache_mode='cache_disabled')
 df_1
 ------------------
-
 
 [1;31m---------------------------------------------------------------------------[0m
 [1;31mNameError[0m                                 Traceback (most recent call last)
@@ -30,4 +29,5 @@ Cell [1;32mIn[1], line 1[0m
 [0;32m      2[0m df_1
 
 [1;31mNameError[0m: name '_deepnote_execute_sql' is not defined
+NameError: name '_deepnote_execute_sql' is not defined
 
