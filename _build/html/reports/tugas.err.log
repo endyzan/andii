@@ -18,16 +18,40 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-df_1 = _deepnote_execute_sql('SELECT * FROM iris;', 'SQL_E0CDE1BA_8707_4487_B543_E6F453CE52E0', audit_sql_comment='', sql_cache_mode='cache_disabled')
-df_1
+import psycopg2
+import pandas as pd
+
+# Informasi koneksi ke database PostgreSQL di cloud Aiven
+hostname = 'pg-3e119ea2-andi176.a.aivencloud.com'
+port = 14814
+username = 'avnadmin'
+password = 'AVNS_8X2P-_6dzJylk3YECuH'
+database = 'defaultdb'
+
+# Membuat koneksi ke database PostgreSQL
+conn = psycopg2.connect(
+    host=hostname,
+    port=port,
+    user=username,
+    password=password,
+    database=database
+)
+
+# Membaca data dari database menggunakan Pandas
+query = "SELECT * FROM iris"
+dataset = pd.read_sql(query, conn)
+
+# tutup koneksi
+conn.close()
 ------------------
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mNameError[0m                                 Traceback (most recent call last)
+[1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
 Cell [1;32mIn[1], line 1[0m
-[1;32m----> 1[0m df_1 [38;5;241m=[39m [43m_deepnote_execute_sql[49m([38;5;124m'[39m[38;5;124mSELECT * FROM iris;[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mSQL_E0CDE1BA_8707_4487_B543_E6F453CE52E0[39m[38;5;124m'[39m, audit_sql_comment[38;5;241m=[39m[38;5;124m'[39m[38;5;124m'[39m, sql_cache_mode[38;5;241m=[39m[38;5;124m'[39m[38;5;124mcache_disabled[39m[38;5;124m'[39m)
-[0;32m      2[0m df_1
+[1;32m----> 1[0m [38;5;28;01mimport[39;00m [38;5;21;01mpsycopg2[39;00m
+[0;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
+[0;32m      4[0m [38;5;66;03m# Informasi koneksi ke database PostgreSQL di cloud Aiven[39;00m
 
-[1;31mNameError[0m: name '_deepnote_execute_sql' is not defined
-NameError: name '_deepnote_execute_sql' is not defined
+[1;31mModuleNotFoundError[0m: No module named 'psycopg2'
+ModuleNotFoundError: No module named 'psycopg2'
 
