@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Data Mining Exploration: Insights and Analysis &#8212; Data Mining</title>
+    <title>Penambangan Data 22-176 &#8212; Data Mining</title>
   
   
   
@@ -57,10 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tugas';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'olds';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,6 +121,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -169,8 +170,8 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Mining Exploration: Insights and Analysis</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tugas.html">Data Mining Exploration: Insights and Analysis</a></li>
 
 
 
@@ -248,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/endyzan/datamining/issues/new?title=Issue%20on%20page%20%2Ftugas.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/endyzan/datamining/issues/new?title=Issue%20on%20page%20%2Folds.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -278,7 +279,7 @@
       
       
       
-      <li><a href="_sources/tugas.ipynb" target="_blank"
+      <li><a href="_sources/olds.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -362,7 +363,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Data Mining Exploration: Insights and Analysis</h1>
+    <h1>Penambangan Data 22-176</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -372,43 +373,34 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data Mining Exploration: Insights and Analysis</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penambangan Data 22-176</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#datamining">1. Datamining</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">2. Data Understanding</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-iris-dataset">a. Iris Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fitur">Fitur</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur">Struktur</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tampilan-iris-dataset">Tampilan iris dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-deskripsi-statistik-sederhana">b. Deskripsi Statistik Sederhana</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-deskripsi-statistik-sederhana">b. Deskripsi Statistik Sederhana</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#visalisasi-data">2. Visalisasi Data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-parallel-coordinates">a. Parallel Coordinates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-andrew-s-curves">b. Andrew’s Curves</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-pairplot">c. Pairplot</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-preprocessing-data">d. Preprocessing Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visalisasi-data">2. Visalisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinates">Parallel Coordinates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#andrew-s-curves">Andrew’s Curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pairplot">Pairplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-preprocessing-data">d. Preprocessing Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-cleaning">Data Cleaning</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputasi-missing-value-menggunakan-mean">Imputasi Missing Value Menggunakan Mean</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputasi-missing-value-menggunakan-knn-k-nearest-neighbors">Imputasi Missing Value Menggunakan KNN (K-Nearest Neighbors)</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">3. outlier</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-local-outlier-factor-loc">a. Local Outlier Factor(LOC)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">3. outlier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-local-outlier-factor-loc">a. Local Outlier Factor(LOC)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-manual-local-outlier-factor">Menghitung Manual Local Outlier Factor</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-menggunakan-python-sckit-learn">Menghitung Menggunakan Python (sckit-learn)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-implementasi-pada-dataset-iris">b. implementasi pada dataset iris</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-implementasi-pada-dataset-iris">b. implementasi pada dataset iris</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#integrasi-data">4. Integrasi Data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modeling">5. Data Modeling</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manual">manual</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-testing">Data Testing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrasi-data">4. Integrasi Data</a></li>
 </ul>
 </li>
 </ul>
@@ -423,8 +415,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="data-mining-exploration-insights-and-analysis">
-<h1>Data Mining Exploration: Insights and Analysis<a class="headerlink" href="#data-mining-exploration-insights-and-analysis" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="penambangan-data-22-176">
+<h1>Penambangan Data 22-176<a class="headerlink" href="#penambangan-data-22-176" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="datamining">
 <h1>1. Datamining<a class="headerlink" href="#datamining" title="Link to this heading">#</a></h1>
@@ -799,9 +791,8 @@ Iris-virginica</p>
 </div></div></div>
 </div>
 </section>
-</section>
 <section id="b-deskripsi-statistik-sederhana">
-<h2>b. Deskripsi Statistik Sederhana<a class="headerlink" href="#b-deskripsi-statistik-sederhana" title="Link to this heading">#</a></h2>
+<h3>b. Deskripsi Statistik Sederhana<a class="headerlink" href="#b-deskripsi-statistik-sederhana" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -930,8 +921,8 @@ dtype: int64
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="visalisasi-data">
-<h1>2. Visalisasi Data<a class="headerlink" href="#visalisasi-data" title="Link to this heading">#</a></h1>
+<section id="visalisasi-data">
+<h2>2. Visalisasi Data<a class="headerlink" href="#visalisasi-data" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -940,8 +931,8 @@ dtype: int64
 </div>
 </div>
 </div>
-<section id="a-parallel-coordinates">
-<h2>a. Parallel Coordinates<a class="headerlink" href="#a-parallel-coordinates" title="Link to this heading">#</a></h2>
+<section id="parallel-coordinates">
+<h3>Parallel Coordinates<a class="headerlink" href="#parallel-coordinates" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.plotting</span> <span class="kn">import</span> <span class="n">parallel_coordinates</span>
@@ -956,12 +947,12 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/0bfba52e77d0a57e5c694c63959c6dd593cac3978ddacbc244787690a83b7a35.png" src="_images/0bfba52e77d0a57e5c694c63959c6dd593cac3978ddacbc244787690a83b7a35.png" />
+<img alt="_images/e943dcde849b99878ab3f782041b5647cf6dc518a2e56bfdcdd3f28277d029c6.png" src="_images/e943dcde849b99878ab3f782041b5647cf6dc518a2e56bfdcdd3f28277d029c6.png" />
 </div>
 </div>
 </section>
-<section id="b-andrew-s-curves">
-<h2>b. Andrew’s Curves<a class="headerlink" href="#b-andrew-s-curves" title="Link to this heading">#</a></h2>
+<section id="andrew-s-curves">
+<h3>Andrew’s Curves<a class="headerlink" href="#andrew-s-curves" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.plotting</span> <span class="kn">import</span> <span class="n">andrews_curves</span>
@@ -974,12 +965,12 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/29d766f4b887d47d4d75ed211f0052eff2f2b26f244f1c56b54fe8d123a41c59.png" src="_images/29d766f4b887d47d4d75ed211f0052eff2f2b26f244f1c56b54fe8d123a41c59.png" />
+<img alt="_images/764d2417d15aeb7728e8e35f2eb638f73ca60ce0f6aad9cb1c627a054bd1db4d.png" src="_images/764d2417d15aeb7728e8e35f2eb638f73ca60ce0f6aad9cb1c627a054bd1db4d.png" />
 </div>
 </div>
 </section>
-<section id="c-pairplot">
-<h2>c. Pairplot<a class="headerlink" href="#c-pairplot" title="Link to this heading">#</a></h2>
+<section id="pairplot">
+<h3>Pairplot<a class="headerlink" href="#pairplot" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -996,12 +987,13 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/263b5b00e2c9c88df3ff7dbd6878c84add1c15653eee901f076ef6407079cb7a.png" src="_images/263b5b00e2c9c88df3ff7dbd6878c84add1c15653eee901f076ef6407079cb7a.png" />
+<img alt="_images/e42eec5ee8f929c3e29dbe832e8cbf46dc9957367e6029c5660bd4deb5ecfa66.png" src="_images/e42eec5ee8f929c3e29dbe832e8cbf46dc9957367e6029c5660bd4deb5ecfa66.png" />
 </div>
 </div>
 </section>
 <section id="d-preprocessing-data">
-<h2>d. Preprocessing Data<a class="headerlink" href="#d-preprocessing-data" title="Link to this heading">#</a></h2>
+<h3>d. Preprocessing Data<a class="headerlink" href="#d-preprocessing-data" title="Link to this heading">#</a></h3>
+</section>
 <section id="data-cleaning">
 <h3>Data Cleaning<a class="headerlink" href="#data-cleaning" title="Link to this heading">#</a></h3>
 </section>
@@ -1668,13 +1660,13 @@ Untuk mencari dekat atau jauhnya jarak antar titik pada kelas k biasanya dihitun
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_62/2894801206.py:31: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_84/2894801206.py:31: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   dataset = pd.read_sql(query, conn)
 Accuracy of our model is equal 96.67 %.
 </pre></div>
 </div>
-<img alt="_images/9cef2f10e47b056fd148ed77a1c3b57e756a9aae2ec329475561abc20478377f.png" src="_images/9cef2f10e47b056fd148ed77a1c3b57e756a9aae2ec329475561abc20478377f.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The optimal number of neighbors is 9.
+<img alt="_images/5052662018be9d4653b5c66136a48526cb94f875deb0db86d2b27e905baa7429.png" src="_images/5052662018be9d4653b5c66136a48526cb94f875deb0db86d2b27e905baa7429.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The optimal number of neighbors is 11.
 </pre></div>
 </div>
 </div>
@@ -1758,7 +1750,7 @@ Accuracy of our model is equal 96.67 %.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_62/1405744230.py:27: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_84/1405744230.py:27: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   df = pd.read_sql(query, conn)
 =============== APAKAH ADA YANG MISSING VALUES ===============
 sepallengthcm    False
@@ -1883,11 +1875,10 @@ dtype: int64
 <p>Hasilnya sudah tidak ditemukan lagi data yang bernilai NULL di kolom SepalLengthCm</p>
 </section>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="outlier">
-<h1>3. outlier<a class="headerlink" href="#outlier" title="Link to this heading">#</a></h1>
+<section id="outlier">
+<h2>3. outlier<a class="headerlink" href="#outlier" title="Link to this heading">#</a></h2>
 <section id="a-local-outlier-factor-loc">
-<h2>a. Local Outlier Factor(LOC)<a class="headerlink" href="#a-local-outlier-factor-loc" title="Link to this heading">#</a></h2>
+<h3>a. Local Outlier Factor(LOC)<a class="headerlink" href="#a-local-outlier-factor-loc" title="Link to this heading">#</a></h3>
 <p>Outlier adalah titik data yang berbeda atau jauh dari titik data lainnya. Local Outlier Factor (LOF) adalah algoritma yang mengidentifikasi outlier yang ada dalam kumpulan data. Ketika suatu titik dianggap sebagai outlier berdasarkan lingkungan lokalnya, maka titik tersebut disebut local outlier . LOF akan mengidentifikasi outlier dengan mempertimbangkan kepadatan lingkungan. LOF bekerja dengan baik ketika kepadatan data tidak sama di seluruh kumpulan data.</p>
 <p>Untuk memahami LOF, kita harus mempelajari beberapa konsep secara berurutan:</p>
 <p>K-distance dan K-neighbors
@@ -1905,6 +1896,7 @@ K-distance dan K-neighbors</p>
 <p>LRD tiap titik digunakan untuk membandingkan dengan rata-rata LRD K tetangganya. LOF adalah perbandingan rata-rata LRD K tetangga A terhadap LRD A.</p>
 <p>Jika suatu titik bukan merupakan pencilan (inlier), rasio rata-rata LRD tetangganya kira-kira sama dengan LRD suatu titik (karena kepadatan suatu titik dan tetangganya kira-kira sama). Dalam hal ini, LOF hampir sama dengan 1. Sebaliknya, jika suatu titik merupakan outlier, LRD suatu titik lebih kecil dari rata-rata LRD tetangganya. Maka nilai LOF akan tinggi.</p>
 <p>Umumnya jika LOF &gt; 1 maka dianggap outlier, namun hal tersebut tidak selalu benar. Katakanlah kita mengetahui bahwa kita hanya memiliki satu outlier dalam data, lalu kita ambil nilai LOF maksimum di antara semua nilai LOF, dan titik yang sesuai dengan nilai LOF maksimum akan dianggap sebagai outlier.</p>
+</section>
 <section id="menghitung-manual-local-outlier-factor">
 <h3>Menghitung Manual Local Outlier Factor<a class="headerlink" href="#menghitung-manual-local-outlier-factor" title="Link to this heading">#</a></h3>
 <p>contoh data dengan tipe numeric 3 fitur, jumlah data 10, k=3 , p=2 (euclidian distance)</p>
@@ -1977,9 +1969,8 @@ Negative LOF scores: [1.         1.         1.         1.57580136 4.74490554 0.9
 </div>
 </div>
 </section>
-</section>
 <section id="b-implementasi-pada-dataset-iris">
-<h2>b. implementasi pada dataset iris<a class="headerlink" href="#b-implementasi-pada-dataset-iris" title="Link to this heading">#</a></h2>
+<h3>b. implementasi pada dataset iris<a class="headerlink" href="#b-implementasi-pada-dataset-iris" title="Link to this heading">#</a></h3>
 <p>Sebelum itu, mari kita tambahkan beberapa outlier ke iris dataset kita</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2147,8 +2138,8 @@ Negative LOF scores: [1.         1.         1.         1.57580136 4.74490554 0.9
 <p>Berdasarkan hasil dari graph tersebut dapat diketahui jika outlier diidentifikasi dengan warna merah. Jika diamati outlier yang ditampilkan sebagai warna merah di sumbu x yang berbeda di sumbu y, ini menunjukkan bahwa ketiga titik tersebut mungkin memiliki nilai yang jauh dari nilai rata-rata atau mayoritas pada sumbu x, namun nilai mereka di sumbu y tidak selalu memiliki pola yang sama. Artinya, outlier-outlier ini mungkin terletak pada posisi yang ekstrem pada sumbu x, tetapi tidak pada sumbu y. yang dimana sumbu x adalah kolom SepalLengthCm dan sumbu y adalah kolom SepalWidthCm.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="integrasi-data">
-<h1>4. Integrasi Data<a class="headerlink" href="#integrasi-data" title="Link to this heading">#</a></h1>
+<section id="integrasi-data">
+<h2>4. Integrasi Data<a class="headerlink" href="#integrasi-data" title="Link to this heading">#</a></h2>
 <p>Karena data preprocessing akan menggabungkan beberapa data dalam suatu dataset, maka Anda harus mengecek data-data yang datang dari berbagai sumber tersebut supaya memiliki format yang sama. Proses ini menjadi salah satu step penting dalam proses ini.</p>
 <p>Beberapa permasalahan bisa muncul ketika melakukan data integration. Misalnya, Anda ingin menggabungkan data dari beberapa sumber. Anda harus mengetahui bahwa data pada sumber pertama dimiliki oleh si A, dan data pada sumber kedua juga terkait dengan si A. Kelihatannya seperti hal mudah, padahal dua sumber tersebut memiliki format yang berbeda. Itulah yang membuat data integration sedikit lebih rumit.</p>
 <p>Mengambil data dari banyak sumber (MySql dan PostgreSql)</p>
@@ -2225,15 +2216,11 @@ Negative LOF scores: [1.         1.         1.         1.57580136 4.74490554 0.9
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting mysql-connector-python
-  Downloading mysql_connector_python-8.3.0-cp39-cp39-manylinux_2_17_x86_64.whl (21.5 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">21.5/21.5 MB</span> <span class=" -Color -Color-Red">58.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hInstalling collected packages: mysql-connector-python
-Successfully installed mysql-connector-python-8.3.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: mysql-connector-python in /root/venv/lib/python3.9/site-packages (8.3.0)
 
 <span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">23.0.1</span> -&gt; <span class=" -Color -Color-Green">24.0</span>
 <span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
-/tmp/ipykernel_62/1350267071.py:25: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+/tmp/ipykernel_84/1350267071.py:25: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   df_mysql = pd.read_sql(query, conn)
 =============== DATA DI MYSQL ===============
    id  petallengthcm  petalwidthcm      species
@@ -2242,7 +2229,7 @@ Successfully installed mysql-connector-python-8.3.0
 2   3            1.3           0.2  Iris-setosa
 3   4            1.5           0.2  Iris-setosa
 4   5            1.4           0.2  Iris-setosa
-/tmp/ipykernel_62/1350267071.py:51: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+/tmp/ipykernel_84/1350267071.py:51: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   df_postgre = pd.read_sql(query, conn)
 =============== DATA DI POSTGRE ===============
    id  sepallengthcm  sepalwidthcm
@@ -2283,578 +2270,6 @@ Successfully installed mysql-connector-python-8.3.0
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="data-modeling">
-<h1>5. Data Modeling<a class="headerlink" href="#data-modeling" title="Link to this heading">#</a></h1>
-<p>Naive Bayes classifier merupakan salah satu metode pembelajaran mesin yang memanfaatkan perhitungan probabilitas dan statistik yang dikemukakan oleh ilmuwan Inggris Thomas Bayes, yaitu memprediksi probabilitas pada masa depan berdasarkan pengalaman pada masa sebelumnya.</p>
-<p>sebelumnya data 150 dipecah menjadi data train dan data testing</p>
-<section id="manual">
-<h2>manual<a class="headerlink" href="#manual" title="Link to this heading">#</a></h2>
-<p>Data train: 80% (40 Iris-setosa, 40 Iris-versicolor, 40 Iris-virginica).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Load the iris dataset</span>
-<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
-<span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
-<span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
-<span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target_names</span><span class="p">[</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">]</span>
-
-<span class="c1"># Filter 40 data for each species</span>
-<span class="n">setosa_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;setosa&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">versicolor_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;versicolor&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">virginica_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;virginica&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="c1"># Concatenate the filtered data</span>
-<span class="n">df_combined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">setosa_data</span><span class="p">,</span> <span class="n">versicolor_data</span><span class="p">,</span> <span class="n">virginica_data</span><span class="p">])</span>
-
-<span class="c1"># Clean data from NaN values</span>
-<span class="n">df_combined_clean</span> <span class="o">=</span> <span class="n">df_combined</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-
-<span class="c1"># Filter 40 data Iris-setosa</span>
-<span class="n">iris_setosa</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;setosa&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="c1"># Display the filtered data</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=============== IRIS SETOSA DATA ===============&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iris_setosa</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=============== IRIS SETOSA DATA ===============
-    sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)  \
-4                 5.0               3.6                1.4               0.2   
-26                5.0               3.4                1.6               0.4   
-10                5.4               3.7                1.5               0.2   
-18                5.7               3.8                1.7               0.3   
-11                4.8               3.4                1.6               0.2   
-36                5.5               3.5                1.3               0.2   
-0                 5.1               3.5                1.4               0.2   
-31                5.4               3.4                1.5               0.4   
-12                4.8               3.0                1.4               0.1   
-15                5.7               4.4                1.5               0.4   
-24                4.8               3.4                1.9               0.2   
-22                4.6               3.6                1.0               0.2   
-30                4.8               3.1                1.6               0.2   
-9                 4.9               3.1                1.5               0.1   
-33                5.5               4.2                1.4               0.2   
-25                5.0               3.0                1.6               0.2   
-28                5.2               3.4                1.4               0.2   
-5                 5.4               3.9                1.7               0.4   
-39                5.1               3.4                1.5               0.2   
-35                5.0               3.2                1.2               0.2   
-16                5.4               3.9                1.3               0.4   
-34                4.9               3.1                1.5               0.2   
-7                 5.0               3.4                1.5               0.2   
-27                5.2               3.5                1.5               0.2   
-19                5.1               3.8                1.5               0.3   
-8                 4.4               2.9                1.4               0.2   
-13                4.3               3.0                1.1               0.1   
-3                 4.6               3.1                1.5               0.2   
-17                5.1               3.5                1.4               0.3   
-38                4.4               3.0                1.3               0.2   
-6                 4.6               3.4                1.4               0.3   
-32                5.2               4.1                1.5               0.1   
-37                4.9               3.6                1.4               0.1   
-29                4.7               3.2                1.6               0.2   
-1                 4.9               3.0                1.4               0.2   
-21                5.1               3.7                1.5               0.4   
-2                 4.7               3.2                1.3               0.2   
-23                5.1               3.3                1.7               0.5   
-20                5.4               3.4                1.7               0.2   
-14                5.8               4.0                1.2               0.2   
-
-    target species  
-4        0  setosa  
-26       0  setosa  
-10       0  setosa  
-18       0  setosa  
-11       0  setosa  
-36       0  setosa  
-0        0  setosa  
-31       0  setosa  
-12       0  setosa  
-15       0  setosa  
-24       0  setosa  
-22       0  setosa  
-30       0  setosa  
-9        0  setosa  
-33       0  setosa  
-25       0  setosa  
-28       0  setosa  
-5        0  setosa  
-39       0  setosa  
-35       0  setosa  
-16       0  setosa  
-34       0  setosa  
-7        0  setosa  
-27       0  setosa  
-19       0  setosa  
-8        0  setosa  
-13       0  setosa  
-3        0  setosa  
-17       0  setosa  
-38       0  setosa  
-6        0  setosa  
-32       0  setosa  
-37       0  setosa  
-29       0  setosa  
-1        0  setosa  
-21       0  setosa  
-2        0  setosa  
-23       0  setosa  
-20       0  setosa  
-14       0  setosa  
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Load the iris dataset</span>
-<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
-<span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
-<span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
-<span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target_names</span><span class="p">[</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">]</span>
-
-<span class="c1"># Filter 40 data for each species</span>
-<span class="n">setosa_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;setosa&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">versicolor_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;versicolor&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">virginica_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;virginica&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="c1"># Concatenate the filtered data</span>
-<span class="n">df_combined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">setosa_data</span><span class="p">,</span> <span class="n">versicolor_data</span><span class="p">,</span> <span class="n">virginica_data</span><span class="p">])</span>
-
-<span class="c1"># Clean data from NaN values</span>
-<span class="n">df_combined_clean</span> <span class="o">=</span> <span class="n">df_combined</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-
-<span class="c1"># Filter 40 data Iris-setosa</span>
-<span class="n">iris_versicolor</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;versicolor&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="c1"># Display the filtered data</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=============== IRIS SETOSA DATA ===============&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iris_versicolor</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=============== IRIS SETOSA DATA ===============
-    sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)  \
-54                6.5               2.8                4.6               1.5   
-57                4.9               2.4                3.3               1.0   
-65                6.7               3.1                4.4               1.4   
-74                6.4               2.9                4.3               1.3   
-83                6.0               2.7                5.1               1.6   
-50                7.0               3.2                4.7               1.4   
-72                6.3               2.5                4.9               1.5   
-75                6.6               3.0                4.4               1.4   
-55                5.7               2.8                4.5               1.3   
-80                5.5               2.4                3.8               1.1   
-52                6.9               3.1                4.9               1.5   
-86                6.7               3.1                4.7               1.5   
-88                5.6               3.0                4.1               1.3   
-66                5.6               3.0                4.5               1.5   
-63                6.1               2.9                4.7               1.4   
-79                5.7               2.6                3.5               1.0   
-78                6.0               2.9                4.5               1.5   
-59                5.2               2.7                3.9               1.4   
-76                6.8               2.8                4.8               1.4   
-53                5.5               2.3                4.0               1.3   
-82                5.8               2.7                3.9               1.2   
-77                6.7               3.0                5.0               1.7   
-87                6.3               2.3                4.4               1.3   
-64                5.6               2.9                3.6               1.3   
-60                5.0               2.0                3.5               1.0   
-56                6.3               3.3                4.7               1.6   
-71                6.1               2.8                4.0               1.3   
-89                5.5               2.5                4.0               1.3   
-51                6.4               3.2                4.5               1.5   
-68                6.2               2.2                4.5               1.5   
-58                6.6               2.9                4.6               1.3   
-67                5.8               2.7                4.1               1.0   
-85                6.0               3.4                4.5               1.6   
-69                5.6               2.5                3.9               1.1   
-73                6.1               2.8                4.7               1.2   
-62                6.0               2.2                4.0               1.0   
-84                5.4               3.0                4.5               1.5   
-70                5.9               3.2                4.8               1.8   
-81                5.5               2.4                3.7               1.0   
-61                5.9               3.0                4.2               1.5   
-
-    target     species  
-54       1  versicolor  
-57       1  versicolor  
-65       1  versicolor  
-74       1  versicolor  
-83       1  versicolor  
-50       1  versicolor  
-72       1  versicolor  
-75       1  versicolor  
-55       1  versicolor  
-80       1  versicolor  
-52       1  versicolor  
-86       1  versicolor  
-88       1  versicolor  
-66       1  versicolor  
-63       1  versicolor  
-79       1  versicolor  
-78       1  versicolor  
-59       1  versicolor  
-76       1  versicolor  
-53       1  versicolor  
-82       1  versicolor  
-77       1  versicolor  
-87       1  versicolor  
-64       1  versicolor  
-60       1  versicolor  
-56       1  versicolor  
-71       1  versicolor  
-89       1  versicolor  
-51       1  versicolor  
-68       1  versicolor  
-58       1  versicolor  
-67       1  versicolor  
-85       1  versicolor  
-69       1  versicolor  
-73       1  versicolor  
-62       1  versicolor  
-84       1  versicolor  
-70       1  versicolor  
-81       1  versicolor  
-61       1  versicolor  
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Load the iris dataset</span>
-<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
-<span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
-<span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
-<span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target_names</span><span class="p">[</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">]</span>
-
-<span class="c1"># Filter 40 data for each species</span>
-<span class="n">setosa_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;setosa&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">versicolor_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;versicolor&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">virginica_data</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="n">iris_df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;virginica&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="c1"># Concatenate the filtered data</span>
-<span class="n">df_combined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">setosa_data</span><span class="p">,</span> <span class="n">versicolor_data</span><span class="p">,</span> <span class="n">virginica_data</span><span class="p">])</span>
-
-<span class="c1"># Clean data from NaN values</span>
-<span class="n">df_combined_clean</span> <span class="o">=</span> <span class="n">df_combined</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-
-<span class="c1"># Filter 40 data Iris-setosa</span>
-<span class="n">iris_virginica</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;virginica&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="c1"># Display the filtered data</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=============== IRIS SETOSA DATA ===============&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iris_virginica</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=============== IRIS SETOSA DATA ===============
-     sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)  \
-127                6.1               3.0                4.9               1.8   
-109                7.2               3.6                6.1               2.5   
-111                6.4               2.7                5.3               1.9   
-129                7.2               3.0                5.8               1.6   
-108                6.7               2.5                5.8               1.8   
-124                6.7               3.3                5.7               2.1   
-134                6.1               2.6                5.6               1.4   
-117                7.7               3.8                6.7               2.2   
-116                6.5               3.0                5.5               1.8   
-130                7.4               2.8                6.1               1.9   
-138                6.0               3.0                4.8               1.8   
-118                7.7               2.6                6.9               2.3   
-105                7.6               3.0                6.6               2.1   
-110                6.5               3.2                5.1               2.0   
-133                6.3               2.8                5.1               1.5   
-103                6.3               2.9                5.6               1.8   
-115                6.4               3.2                5.3               2.3   
-120                6.9               3.2                5.7               2.3   
-104                6.5               3.0                5.8               2.2   
-137                6.4               3.1                5.5               1.8   
-131                7.9               3.8                6.4               2.0   
-114                5.8               2.8                5.1               2.4   
-100                6.3               3.3                6.0               2.5   
-101                5.8               2.7                5.1               1.9   
-136                6.3               3.4                5.6               2.4   
-113                5.7               2.5                5.0               2.0   
-121                5.6               2.8                4.9               2.0   
-132                6.4               2.8                5.6               2.2   
-125                7.2               3.2                6.0               1.8   
-135                7.7               3.0                6.1               2.3   
-123                6.3               2.7                4.9               1.8   
-119                6.0               2.2                5.0               1.5   
-107                7.3               2.9                6.3               1.8   
-128                6.4               2.8                5.6               2.1   
-106                4.9               2.5                4.5               1.7   
-102                7.1               3.0                5.9               2.1   
-139                6.9               3.1                5.4               2.1   
-126                6.2               2.8                4.8               1.8   
-112                6.8               3.0                5.5               2.1   
-122                7.7               2.8                6.7               2.0   
-
-     target    species  
-127       2  virginica  
-109       2  virginica  
-111       2  virginica  
-129       2  virginica  
-108       2  virginica  
-124       2  virginica  
-134       2  virginica  
-117       2  virginica  
-116       2  virginica  
-130       2  virginica  
-138       2  virginica  
-118       2  virginica  
-105       2  virginica  
-110       2  virginica  
-133       2  virginica  
-103       2  virginica  
-115       2  virginica  
-120       2  virginica  
-104       2  virginica  
-137       2  virginica  
-131       2  virginica  
-114       2  virginica  
-100       2  virginica  
-101       2  virginica  
-136       2  virginica  
-113       2  virginica  
-121       2  virginica  
-132       2  virginica  
-125       2  virginica  
-135       2  virginica  
-123       2  virginica  
-119       2  virginica  
-107       2  virginica  
-128       2  virginica  
-106       2  virginica  
-102       2  virginica  
-139       2  virginica  
-126       2  virginica  
-112       2  virginica  
-122       2  virginica  
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="data-testing">
-<h2>Data Testing<a class="headerlink" href="#data-testing" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_18</span> <span class="o">=</span> <span class="n">_deepnote_execute_sql</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;SQL_A43E3F31_6AFC_48F2_8226_96515CC73026&#39;</span><span class="p">,</span> <span class="n">audit_sql_comment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">sql_cache_mode</span><span class="o">=</span><span class="s1">&#39;cache_disabled&#39;</span><span class="p">)</span>
-<span class="n">df_18</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_9</span> <span class="o">=</span> <span class="n">_deepnote_execute_sql</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM iris&#39;</span><span class="p">,</span> <span class="s1">&#39;SQL_A43E3F31_6AFC_48F2_8226_96515CC73026&#39;</span><span class="p">,</span> <span class="n">audit_sql_comment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">sql_cache_mode</span><span class="o">=</span><span class="s1">&#39;cache_disabled&#39;</span><span class="p">)</span>
-<span class="n">df_9</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>id</th>
-      <th>sepallengthcm</th>
-      <th>sepalwidthcm</th>
-      <th>petallengthcm</th>
-      <th>petalwidthcm</th>
-      <th>species</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>74</td>
-      <td>6.1</td>
-      <td>2.8</td>
-      <td>4.7</td>
-      <td>1.2</td>
-      <td>Iris-versicolor</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>4.9</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>38</td>
-      <td>4.9</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.1</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>39</td>
-      <td>4.4</td>
-      <td>3.0</td>
-      <td>1.3</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>143</th>
-      <td>146</td>
-      <td>6.7</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>144</th>
-      <td>147</td>
-      <td>6.3</td>
-      <td>2.5</td>
-      <td>5.0</td>
-      <td>1.9</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>148</td>
-      <td>6.5</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.0</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td>149</td>
-      <td>6.2</td>
-      <td>3.4</td>
-      <td>5.4</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td>150</td>
-      <td>5.9</td>
-      <td>3.0</td>
-      <td>5.1</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-  </tbody>
-</table>
-<p>148 rows × 6 columns</p>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_9</span> <span class="o">=</span> <span class="n">_deepnote_execute_sql</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM Iris_naivebayes;&#39;</span><span class="p">,</span> <span class="s1">&#39;SQL_09471B5A_652D_432F_B73D_65305A4929E6&#39;</span><span class="p">,</span> <span class="n">audit_sql_comment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">sql_cache_mode</span><span class="o">=</span><span class="s1">&#39;cache_disabled&#39;</span><span class="p">)</span>
-<span class="n">df_9</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span>
-
-<span class="c1"># Pisahkan fitur dan kelas target</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[[</span><span class="s1">&#39;sepallengthcm&#39;</span><span class="p">,</span> <span class="s1">&#39;sepalwidthcm&#39;</span><span class="p">,</span> <span class="s1">&#39;petallengthcm&#39;</span><span class="p">,</span> <span class="s1">&#39;petalwidthcm&#39;</span><span class="p">]]</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span>  <span class="c1"># &#39;species&#39; adalah kolom target</span>
-
-<span class="c1"># Pisahkan data menjadi data pelatihan dan data pengujian</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-<span class="c1"># Inisialisasi dan latih model Naive Bayes</span>
-<span class="n">nb_model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">nb_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-<span class="c1"># Lakukan prediksi menggunakan data pengujian</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">nb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-
-<span class="c1"># Evaluasi performa model</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi:&quot;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
-
-<span class="c1"># Tampilkan laporan klasifikasi</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Laporan Klasifikasi:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi: 0.9666666666666667
-Laporan Klasifikasi:
-                 precision    recall  f1-score   support
-
-    Iris-setosa       1.00      1.00      1.00         9
-Iris-versicolor       1.00      0.91      0.95        11
- Iris-virginica       0.91      1.00      0.95        10
-
-       accuracy                           0.97        30
-      macro avg       0.97      0.97      0.97        30
-   weighted avg       0.97      0.97      0.97        30
-</pre></div>
-</div>
-</div>
-</div>
 <a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=47e11cf5-1dd3-41a6-812f-a8173eb44dba' target="_blank">
 <img alt='Created in deepnote.com' style='display:inline;max-height:16px;margin:0px;margin-right:7.5px;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkxhbmRpbmciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMzUuMDAwMDAwLCAtNzkuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjM1LjAwMDAwMCwgNzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yMCIgZmlsbD0iIzAyNjVCNCIgcG9pbnRzPSIyLjM3NjIzNzYyIDgwIDM4LjA0NzY2NjcgODAgNTcuODIxNzgyMiA3My44MDU3NTkyIDU3LjgyMTc4MjIgMzIuNzU5MjczOSAzOS4xNDAyMjc4IDMxLjY4MzE2ODMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNS4wMDc3MTgsODAgQzQyLjkwNjIwMDcsNzYuNDU0OTM1OCA0Ny41NjQ5MTY3LDcxLjU0MjI2NzEgNDguOTgzODY2LDY1LjI2MTk5MzkgQzUxLjExMjI4OTksNTUuODQxNTg0MiA0MS42NzcxNzk1LDQ5LjIxMjIyODQgMjUuNjIzOTg0Niw0OS4yMTIyMjg0IEMyNS40ODQ5Mjg5LDQ5LjEyNjg0NDggMjkuODI2MTI5Niw0My4yODM4MjQ4IDM4LjY0NzU4NjksMzEuNjgzMTY4MyBMNzIuODcxMjg3MSwzMi41NTQ0MjUgTDY1LjI4MDk3Myw2Ny42NzYzNDIxIEw1MS4xMTIyODk5LDc3LjM3NjE0NCBMMzUuMDA3NzE4LDgwIFoiIGlkPSJQYXRoLTIyIiBmaWxsPSIjMDAyODY4Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwzNy43MzA0NDA1IEwyNy4xMTQ1MzcsMC4yNTcxMTE0MzYgQzYyLjM3MTUxMjMsLTEuOTkwNzE3MDEgODAsMTAuNTAwMzkyNyA4MCwzNy43MzA0NDA1IEM4MCw2NC45NjA0ODgyIDY0Ljc3NjUwMzgsNzkuMDUwMzQxNCAzNC4zMjk1MTEzLDgwIEM0Ny4wNTUzNDg5LDc3LjU2NzA4MDggNTMuNDE4MjY3Nyw3MC4zMTM2MTAzIDUzLjQxODI2NzcsNTguMjM5NTg4NSBDNTMuNDE4MjY3Nyw0MC4xMjg1NTU3IDM2LjMwMzk1NDQsMzcuNzMwNDQwNSAyNS4yMjc0MTcsMzcuNzMwNDQwNSBDMTcuODQzMDU4NiwzNy43MzA0NDA1IDkuNDMzOTE5NjYsMzcuNzMwNDQwNSAwLDM3LjczMDQ0MDUgWiIgaWQ9IlBhdGgtMTkiIGZpbGw9IiMzNzkzRUYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+' > </img>
 Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></section>
@@ -2890,15 +2305,6 @@ Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></s
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
@@ -2915,43 +2321,34 @@ Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></s
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data Mining Exploration: Insights and Analysis</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penambangan Data 22-176</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#datamining">1. Datamining</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">2. Data Understanding</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-iris-dataset">a. Iris Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fitur">Fitur</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur">Struktur</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tampilan-iris-dataset">Tampilan iris dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-deskripsi-statistik-sederhana">b. Deskripsi Statistik Sederhana</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-deskripsi-statistik-sederhana">b. Deskripsi Statistik Sederhana</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#visalisasi-data">2. Visalisasi Data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-parallel-coordinates">a. Parallel Coordinates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-andrew-s-curves">b. Andrew’s Curves</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-pairplot">c. Pairplot</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-preprocessing-data">d. Preprocessing Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visalisasi-data">2. Visalisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinates">Parallel Coordinates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#andrew-s-curves">Andrew’s Curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pairplot">Pairplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-preprocessing-data">d. Preprocessing Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-cleaning">Data Cleaning</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputasi-missing-value-menggunakan-mean">Imputasi Missing Value Menggunakan Mean</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputasi-missing-value-menggunakan-knn-k-nearest-neighbors">Imputasi Missing Value Menggunakan KNN (K-Nearest Neighbors)</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">3. outlier</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-local-outlier-factor-loc">a. Local Outlier Factor(LOC)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">3. outlier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-local-outlier-factor-loc">a. Local Outlier Factor(LOC)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-manual-local-outlier-factor">Menghitung Manual Local Outlier Factor</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-menggunakan-python-sckit-learn">Menghitung Menggunakan Python (sckit-learn)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-implementasi-pada-dataset-iris">b. implementasi pada dataset iris</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-implementasi-pada-dataset-iris">b. implementasi pada dataset iris</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#integrasi-data">4. Integrasi Data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modeling">5. Data Modeling</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manual">manual</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-testing">Data Testing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrasi-data">4. Integrasi Data</a></li>
 </ul>
 </li>
 </ul>
